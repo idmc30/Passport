@@ -7,14 +7,19 @@
 <body>
 	<form action="/oauth/clients" method="POST">
 	 <p>
+	 	<label for="usuario">Usuario</label>
 	 	<input type="text" name="name">
 	 </p>
 	 <p>
+	 	<label for="redirecionar">Redirect</label>
 	 	<input type="text" name="redirect">
 	 </p>
-	   <input type="button" name="send" value="Enviar">
+	   <input type="submit" name="send" value="Enviar">
 	 {{csrf_field()}}
 	</form>
+
+	<br>
+	{{$clients}}
 	
 </body>
 </html>
