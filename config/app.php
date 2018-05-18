@@ -147,6 +147,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
+        Barryvdh\Cors\AppServiceProvider::class,
 
         /*
          * Package Service Providers...
