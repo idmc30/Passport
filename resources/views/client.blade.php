@@ -19,7 +19,27 @@
 	</form>
 
 	<br>
-	{{$clients}}
+
+
+	<table border="3px">
+		<tr>
+			<td>Id</td>
+			<td>Name</td>
+			<td>Redirect</td>
+			<td>Secret</td>
+		</tr>
+			@foreach($clients as $client)
+			<tr>
+			   <td>{{$client->user_id}}</td>
+			   <td>{{$client->name}}</td>
+			   <td>{{$client->redirect}}</td>
+			   <td>{{$client->secret}}</td>	
+			</tr>
+             
+
+			@endforeach
+		
+	</table>
 	
 </body>
 </html>
